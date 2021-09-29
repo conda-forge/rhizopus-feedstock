@@ -1,5 +1,5 @@
 {% set name = "rhizopus" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/jwergieluk/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b854f10ad38a9fef389b2331e871d968c1eb642fe9602ee0800f02fd95abd906
+  sha256: 707daf32859de7d4934013e254377229d0453f48e894640ef228e29a65912cfa
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -42,7 +42,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE
-  summary: 'Trading simulator'
+  summary: Trading simulator
   description: |
     rhizopus is a Python trading simulation framework and a backtesting tool.
     It can be used to construct broker simulators for backtesting with
