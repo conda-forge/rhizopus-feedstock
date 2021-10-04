@@ -1,5 +1,5 @@
 {% set name = "rhizopus" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jwergieluk/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 72725788566c341405e8e1c49a476a2cf7897cf7ec5252784656613e46445e23
+  sha256: c493980a36b460d9ac2b1c0ae0338633e66f1a6a9d1dbb55f4606557b71602b4
 
 build:
   noarch: python
